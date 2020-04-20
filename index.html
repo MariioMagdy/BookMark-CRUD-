@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBOOKMARK</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index_style.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container pt-5 pb-5">
+        <h1 class="pb-4 pl-3 font-weight-bold">BookMark&nbsp;<i class="far fa-bookmark"></i></h1>
+        <hr>
+        <div class="body m-auto text-center py-5 rounded">
+            <h2 class="py-2 text-capitalize font-weight-bold">Bookmark your favorite sites</h2>
+            <form class="w-75 m-auto" id="myForm">
+                <div class="form-group">
+                    <label for="Site_Name" class="py-2">Site Name</label>
+                    <input type="text" class="form-control ss" id="siteName" placeholder="Bookmark Name">
+                    <div class="alert-danger text-capitalize mt-2 p-2 error">Please Make sure to write alphabetic
+                        characters
+                        only
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Site_URL" class="py-2">Site URL</label>
+                    <input type="text" class="form-control ss" id="siteUrl" placeholder="website URL">
+                </div>
+                <div class="alert-danger mt-2 p-2 errorT">Please Make sure that link starts with
+                    https://
+                    and ends with /
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button id="sub" class="btn btn-primary mb-3 mr-3">Submit</button>
+                    <span id="up"></span>
+                </div>
+                <div class="pb-4">
+                    <input onkeyup="search(this.value)" class="w-100 form-control" placeholder="Search">
+                </div>
+            </form>
+        </div>
+        <div class="container mt-3">
+            <div id="bookmarkCon" class="py-3">
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <p>&copy;2020 Bookmarker Inc.</p>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
